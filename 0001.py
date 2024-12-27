@@ -9,8 +9,8 @@ class Solution:
                 return [dic[target - nums[i]], i]
             dic[nums[i]] = i 
 
-check = lambda nums, target, expectedAnswer : Solution().twoSum(nums, target) == expectedAnswer  
+check = lambda nums, target, expectedAnswer : print(Solution().twoSum(nums, target) == expectedAnswer)  
 
-print(check([2, 7, 11, 15], 9, [0, 1]))
-print(check([3, 2, 4], 6, [1, 2]))
-print(check([3, 3], 6, [0, 1]))
+check([2, 7, 11, 15], 9, [0, 1])
+check([3, 2, 4], 6, [1, 2])
+check([3, 3], 6, [0, 1])
