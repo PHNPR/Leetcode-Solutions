@@ -7,4 +7,4 @@ class Solution:
                 ans += len(set(s[l+1:r]))
             except :
                 continue 
-        return ans 
+        return ans
