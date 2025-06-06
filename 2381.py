@@ -9,7 +9,6 @@ class Solution:
             dp[b + 1] -= (2*c - 1)
         
         f = lambda i : chr(97 + (ord(s[i]) - 97 + dp[i]) % 26)
-
         val = f(0)
 
         for i in range(1, len(s)) :
